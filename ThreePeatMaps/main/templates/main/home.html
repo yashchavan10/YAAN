@@ -1,0 +1,143 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block extend_head %}
+
+<script src='https://www.google.com/recaptcha/api.js?render={{recaptcha_site_key}}'></script>
+
+
+{% endblock %}
+
+{% block extend_nav %} 
+
+<!-- <ul class="sidenav">
+  <div class="brand-logo" >
+		<img class="logo" src="{% static 'branding/yaan.png' %}" />
+		
+	</div>
+  <li><a class="active" href="{% url 'main:route' %}">Search</a></li>
+  <li><a href="javascript:void(0)" onclick="alert('Please add a start and end address')">Map</a></li>
+</ul> -->
+<!-- <img src={career_main} alt="FCC Logo" width={"100%"} height="550" class="acc1" ></img> -->
+
+
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+ 
+  <div class="container-fluid">
+    
+    <div class="brand-logo" >
+      <img class="logo" src="{% static 'branding/yaan.png' %}" />
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div>
+  <img class="hero" src="{% static 'branding/hero-bg.jpg' %}" />
+</div>   -->
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <!-- <div class="container"> -->
+    <a class="navbar-brand" href="{% url 'main:home' %}">
+      <!-- <img src="https://placeholder.pics/svg/150x50/888888/EEE/Logo" alt="..." height="36"> -->
+      <img class="logo" src="{% static 'branding/logo new.png' %}" />
+    </a>
+ 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"  href="{% url 'main:home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="route/">Search</a>
+          <!-- <li><a href="{% url 'main:route' %}">Search</a></li> -->
+          <!-- <li><a class="active" href="#map">Map</a></li> -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:8002">Sign-Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact/">Contact us</a>
+        </li>
+        <li><a class="dropdown-item" href="#">Something </a></li>
+        
+            
+          </ul>
+        </li>
+      </ul>
+    <!-- </div> -->
+  </div>
+</nav>
+
+
+<!-- Page Content -->
+<div class="container-hero"> 
+  <!-- <img class="hero" src="{% static 'branding/hero-bg.jpg' %}"style="width:100%;"> -->
+  <div class="centered">
+    <button type="button" class="btn bg-warning-subtle ">
+      <h3>Welcome to Smart Transport System</h3>
+      </button>
+      <h1>Find Your YAAN Around!!!!</h1>
+      
+      <button type="button" class="btn btn-outline-light">Get Started</button>
+      <!-- /* Define the typewriter animation */ -->
+      
+    
+    <h1></h1>
+  </div>
+</div>
+
+
+
+
+
+
+{% endblock %}
+
+
+{% block content %}
+
+
+
+
+
+
+
+<!-- 
+
+
+{% endblock %}
+
+{% block extend_footer %}
+
+
+<script type="text/javascript">
+
+    var google_api_key = "{{google_api_key|safe}}";
+
+  </script>
+
+  <script src="{% static 'google_places.js' %}"></script>
+
+
+{% endblock %}
+
